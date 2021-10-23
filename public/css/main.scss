@@ -1,0 +1,60 @@
+$menuWidth: 300px;
+$smallMenuWidth: 50px;
+$pubTransition: .2s;
+$borderColor: #c1c1c1;
+$darkColor: #1d282e;
+$bgColor: #f2f7fd;
+.w-0 {
+    width: 0;
+}
+.h-0 {
+    height: 0;
+}
+.main-content {
+    background-color: $bgColor;
+}
+.modal-footer {
+    background-color: $bgColor;
+}
+.modal-header {
+    background-color: $bgColor;
+}
+
+body[dir="rtl"] {
+    .content-header {
+        // background: linear-gradient(90deg, rgba(64,130,189,1) 0%, rgba(94,190,222,1) 100%);
+        background-color: #e3eef2;
+    }
+}
+
+body[dir="ltr"] {
+    .content-header {
+        // background: linear-gradient(-90deg, rgba(64,130,189,1) 0%, rgba(94,190,222,1) 100%);
+        background-color: #e3eef2;
+    }
+}
+
+.card-avatar {
+    border-style: solid;
+    box-sizing: content-box;
+}
+
+// Custom css Select2 
+.select2-container--default .select2-selection--single{
+    border: 1px solid #ced4da;
+    height: 38px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 35px;
+    padding-right: 30px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none;
+    margin-top: 0;
+    width: 12px;
+    height: 11px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    left: 0;
+    margin-left: -6px;
+}

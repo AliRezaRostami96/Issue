@@ -16,3 +16,35 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages/home');
 });
+
+Route::get('/login', function () {
+    return view('pages/login');
+});
+
+Route::get('/all-cards', function () {
+    return view('pages/all-cards');
+});
+
+Route::get('/add-card', function () {
+    return view('pages/add-card');
+});
+
+Route::get('/all-groups', function () {
+    return view('pages/all-groups');
+});
+
+Route::get('/add-group', function () {
+    return view('pages/add-group');
+});
+
+Route::get('/all-users', function () {
+    return view('pages/all-users');
+});
+
+Route::get('/issue-cards', function () {
+    return view('pages/issue-cards');
+});
+
+Route::get('/bulk-group', function () {
+    return view('pages/bulk-group');
+});

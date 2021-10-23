@@ -1,0 +1,43 @@
+.main-menu {
+  width: 47px;
+  transition: 0.2s;
+}
+.main-menu.menu-is-open {
+  width: 300px;
+}
+.main-menu.menu-is-open .logo.invisible {
+  visibility: visible !important;
+}
+.main-menu:not(.menu-is-open) .menu-item .page-name {
+  display: none !important;
+}
+.main-menu .menu-item {
+  border-bottom: solid 1px #c1c1c1;
+}
+.main-menu .menu-item .page-name {
+  transition: 0.2s;
+}
+
+.main-content {
+  width: calc(100% - $smallMenuWidth);
+  transition: 0.2s;
+}
+.main-content.menu-is-open {
+  width: calc(100% - $menuWidth);
+}
+
+body[dir=rtl] .main-content {
+  margin-right: 47px;
+}
+body[dir=rtl] .main-content.menu-is-open {
+  margin-right: 300px;
+}
+
+body[dir=ltr] .main-content {
+  margin-left: 47px;
+}
+body[dir=ltr] .main-content.menu-is-open {
+  margin-left: 300px;
+}
+
+/*# sourceMappingURL=header.css.map */
