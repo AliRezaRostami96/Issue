@@ -471,6 +471,7 @@
                         </span>
                         <span id="occupation"
                               class="position-absolute"
+                              style="top: 0; left: 0; font-size: 20px"
                         >
                             Occupation
                         </span>
