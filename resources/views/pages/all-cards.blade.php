@@ -31,44 +31,46 @@
             </form>
         </div>
         <div class="card-body">
-            <table class="table table-hover text-center m-0">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                    <th>PRINT TYPE</th>
-                    <th>FONT</th>
-                    <th>GROUPS COUNT</th>
-                    <th>CARD BASE</th>
-                    <th>NEED BARCODE</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Staff</td>
-                    <td>1 Group</td>
-                    <td>English</td>
-                    <td>ArialBold</td>
-                    <td>
-                        <button
-                            type="button"
-                            class="btn-sm btn-primary shadow-none show-modal"
-                            data-bs-toggle="modal"
-                            data-bs-target="#showCardModal"
-                            data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
-                        >
-                            Show Card
-                        </button>
-                    </td>
-                    <td>
+            <div class="w-100 overflow-auto">
+                <table class="table table-hover text-center m-0">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>PRINT TYPE</th>
+                        <th>FONT</th>
+                        <th>GROUPS COUNT</th>
+                        <th>CARD BASE</th>
+                        <th>NEED BARCODE</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Staff</td>
+                        <td>1 Group</td>
+                        <td>English</td>
+                        <td>ArialBold</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn-sm btn-primary shadow-none show-modal"
+                                data-bs-toggle="modal"
+                                data-bs-target="#showCardModal"
+                                data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                            >
+                                Show Card
+                            </button>
+                        </td>
+                        <td>
                 <span class="badge bg-success">
                     yes
                 </span>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="mt-3 d-flex flex-row-reverse">
                 <div style="width: 80px;">
                     <select class="form-select shadow-none">

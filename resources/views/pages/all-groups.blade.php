@@ -31,7 +31,8 @@
             </form>
         </div>
         <div class="card-body">
-            <table class="table table-hover text-center m-0">
+            <div class="w-100 overflow-auto">
+                <table class="table table-hover text-center m-0">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -72,6 +73,7 @@
                 </tr>
                 </tbody>
             </table>
+            </div>
             <div class="mt-3 d-flex flex-row-reverse">
                 <div style="width: 80px;">
                     <select class="form-select shadow-none">
