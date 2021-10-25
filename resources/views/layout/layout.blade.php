@@ -22,11 +22,11 @@
         @include('layout.menu')
 
         <div class="main-content min-vh-100">
-            <div class="py-3 px-4 content-header border-bottom border-secondary">
+            <div class="content-header bg-white shadow">
                 <div class="dropdown text-end">
-                    <button class="bg-transparent border-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="bg-light border border-start border-0 text-dark p-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user m-0 mt-1 p-2 bg-dark rounded-circle text-light fs-6"></i>
                         <span class="me-1">Alireza Rostami</span>
-                        <i class="fa fa-user m-0 float-end middle mt-1"></i>
                     </button>
                     <ul class="dropdown-menu px-2" aria-labelledby="dropdownMenuButton1">
                         <li><a class="btn btn-secondary w-100" href="#">Exit</a></li>

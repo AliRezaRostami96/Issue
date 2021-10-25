@@ -1,9 +1,11 @@
-$menuWidth: 300px;
+$menuWidth: 230px;
 $smallMenuWidth: 50px;
 $pubTransition: .2s;
 $borderColor: #c1c1c1;
 $darkColor: #1d282e;
-$bgColor: #f2f7fd;
+$bgColor: #f9fafd;
+$primary: #313a46;
+
 .w-0 {
     width: 0;
 }
@@ -18,20 +20,6 @@ $bgColor: #f2f7fd;
 }
 .modal-header {
     background-color: $bgColor;
-}
-
-body[dir="rtl"] {
-    .content-header {
-        // background: linear-gradient(90deg, rgba(64,130,189,1) 0%, rgba(94,190,222,1) 100%);
-        background-color: #e3eef2;
-    }
-}
-
-body[dir="ltr"] {
-    .content-header {
-        // background: linear-gradient(-90deg, rgba(64,130,189,1) 0%, rgba(94,190,222,1) 100%);
-        background-color: #e3eef2;
-    }
 }
 
 .card-avatar {
@@ -57,4 +45,12 @@ body[dir="ltr"] {
     background-repeat: no-repeat;
     left: 0;
     margin-left: -6px;
+}
+
+.card-header + .card-footer {
+    border-top: none;
+}
+
+.we-bg-primary {
+    background-color: $primary!important;
 }

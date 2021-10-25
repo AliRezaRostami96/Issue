@@ -1,12 +1,15 @@
-$menuWidth: 300px;
+$menuWidth: 230px;
 $smallMenuWidth: 47px;
 $pubTransition: .2s;
 $borderColor: #c1c1c1;
 $darkColor: #1d282e;
 
+$primary: #313a46;
 .main-menu {
   width: $smallMenuWidth;
   transition: $pubTransition;
+  background-color: $primary;
+  z-index: 10;
   &.menu-is-open {
     width: $menuWidth;
 

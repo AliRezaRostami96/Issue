@@ -1,9 +1,11 @@
 .main-menu {
   width: 47px;
   transition: 0.2s;
+  background-color: #313a46;
+  z-index: 10;
 }
 .main-menu.menu-is-open {
-  width: 300px;
+  width: 230px;
 }
 .main-menu.menu-is-open .logo.invisible {
   visibility: visible !important;
@@ -30,14 +32,14 @@ body[dir=rtl] .main-content {
   margin-right: 47px;
 }
 body[dir=rtl] .main-content.menu-is-open {
-  margin-right: 300px;
+  margin-right: 230px;
 }
 
 body[dir=ltr] .main-content {
   margin-left: 47px;
 }
 body[dir=ltr] .main-content.menu-is-open {
-  margin-left: 300px;
+  margin-left: 230px;
 }
 
 /*# sourceMappingURL=header.css.map */
