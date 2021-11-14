@@ -26,11 +26,16 @@
         "IconClasses" => 'fas fa-users',
       ),
       5 => array (
+        "PageName" => 'Add User',
+        "PageLink" => 'add-user',
+        "IconClasses" => 'fas fa-users',
+      ),
+      6 => array (
         "PageName" => 'Issue Cards',
         "PageLink" => 'issue-cards',
         "IconClasses" => 'fas fa-user-friends',
       ),
-      6 => array (
+      7 => array (
         "PageName" => 'Bulk Group',
         "PageLink" => 'bulk-group',
         "IconClasses" => 'fas fa-users-medical',
@@ -47,7 +52,8 @@
             <i class="fas fa-bars h5 m-0 py-1"></i>
         </button>
         <div class="text-center invisible mb-3 logo">
-            <img class="px-5" width="215" height="35" src="https://issue.fajriff.com/assets/img/brand/blue.png" alt="logo">
+            <img class="px-5" width="215" height="35" src="https://issue.fajriff.com/assets/img/brand/blue.png"
+                 alt="logo">
         </div>
         <ul class="list-unstyled">
             @foreach($lists as $item)

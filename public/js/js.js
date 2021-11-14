@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("ready");
     checkMenuStatus();
 })
 
@@ -22,4 +21,13 @@ function menuToggle() {
         $(".main-content").addClass("menu-is-open");
         localStorage.setItem("menuStatus", "menu-is-open");
     }
+}
+
+function getBase64(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+    });
 }

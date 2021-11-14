@@ -41,6 +41,10 @@ Route::get('/all-users', function () {
     return view('pages/all-users');
 });
 
+Route::get('/add-user', function () {
+    return view('pages/add-user');
+});
+
 Route::get('/issue-cards', function () {
     return view('pages/issue-cards');
 });
