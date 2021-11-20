@@ -56,7 +56,7 @@
                 </div>
                 <div class="modal-body">
                     <div>
-                        <img class="img-fluid" src="{{@asset('images/barcode.png')}}" id="imageCropper" alt="">
+                        <img class="img-fluid" id="imageCropper" alt="">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -74,10 +74,6 @@
         let cropperModal = new bootstrap.Modal(document.getElementById('cropperModal'))
         let cropper;
 
-        $("#cropperModal").on("shown.bs.modal", function () {
-            cropperInit();
-        })
-
         function closeModal() {
             cropperModal.hide();
             removeImage();
@@ -86,11 +82,13 @@
         function onImageSelect(e) {
             getBase64(e.srcElement.files[0]).then(function (base64) {
                 $("#imageCropper").attr("src", base64);
+                cropperInit();
                 cropperModal.show();
             })
         }
 
         function cropperInit() {
+            console.log($("#imageCropper"))
             const image = document.getElementById('imageCropper');
             cropper = new Cropper(image, {
                 aspectRatio: 1 / 1,
@@ -105,6 +103,7 @@
         }
 
         function saveCroppedImage() {
+            console.log(cropper);
             const croppedBase64 = cropper.getCroppedCanvas().toDataURL();
             $("#cropperImage").val(croppedBase64);
             $("#croppedImagePreview").attr("src", croppedBase64);
