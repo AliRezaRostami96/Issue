@@ -2,7 +2,7 @@
 
 @section("content")
     <div class="card shadow rounded-3 overflow-hidden">
-        <h5 class="card-header">Cards List</h5>
+        <h5 class="card-header">Groups List</h5>
         <div class="card-footer">
             <form class="row">
 

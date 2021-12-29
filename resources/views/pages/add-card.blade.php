@@ -31,6 +31,48 @@
                     </div>
                 </div>
 
+                <div class="col-12 col-md-4 mt-3">
+                    <label for="CardName" class="form-label">Card Width(cm)</label>
+                    <div class="input-group">
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="CardWidth"
+                            value="10"
+                            placeholder="Card Width"
+                            onchange="onStyleChange('#previewSection','width', 'cm', event)"
+                        >
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-3">
+                    <label for="CardName" class="form-label">Card height(cm)</label>
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="CardHeight"
+                            value="15"
+                            placeholder="Card Height"
+                            onchange="onStyleChange('#previewSection','height', 'cm', event)"
+                        >
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-3">
+                    <label for="ew" class="form-label">Print Font</label>
+                    <div class="input-group">
+                        <select id="CardType"
+                                class="form-select"
+                                onchange="onStyleChange('#previewSection','font-family', '', event)"
+                        >
+                            <option selected></option>
+                            <option value="Arial" selected>Arial</option>
+                            <option value="B Nazanin">Bnazanin</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="dropdown-divider my-3"></div>
 
                 <span class="h6 text-secondary m-0 p-0">First Name</span>
@@ -62,17 +104,29 @@
                 </div>
 
                 <div class="col-12 col-md-4 mt-3">
-                    <label for="ew" class="form-label">Print Font</label>
+                    <label for="er" class="form-label">Font Size</label>
                     <div class="input-group">
-                        <select id="CardType"
-                                class="form-select"
-                                onchange="onStyleChange('#firstName','font-family', '', event)"
+                        <input type="number"
+                               class="form-control"
+                               id="er"
+                               min="10"
+                               max="30"
+                               value="20"
+                               placeholder="Font Size"
+                               onchange="onStyleChange('#firstName','font-size', 'px', event)"
                         >
-                            <option selected></option>
-                            <option value="Arial" selected>Arial</option>
-                            <option value="B Nazanin">Bnazanin</option>
-                        </select>
                     </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-3">
+                    <label for="colorPicker" class="form-label">Color picker</label>
+                    <input
+                        type="color"
+                        class="form-control form-control-color"
+                        id="colorPicker"
+                        value="#000000"
+                        onchange="onStyleChange('#firstName','color', '', event)"
+                    >
                 </div>
 
                 <div class="dropdown-divider my-3"></div>
@@ -111,13 +165,24 @@
                         <input type="number"
                                class="form-control"
                                id="er"
-                               min="20"
-                               max="100"
+                               min="10"
+                               max="30"
                                value="20"
                                placeholder="Font Size"
                                onchange="onStyleChange('#lastName','font-size', 'px', event)"
                         >
                     </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-3">
+                    <label for="colorPicker" class="form-label">Color picker</label>
+                    <input
+                        type="color"
+                        class="form-control form-control-color"
+                        id="colorPicker"
+                        value="#000000"
+                        onchange="onStyleChange('#lastName','color', '', event)"
+                    >
                 </div>
 
                 <div class="dropdown-divider my-3"></div>
@@ -247,13 +312,24 @@
                         <input type="number"
                                class="form-control"
                                id="er"
-                               min="20"
-                               max="100"
+                               min="10"
+                               max="30"
                                value="20"
                                placeholder="Occupation Font Size"
                                onchange="onStyleChange('#occupation','font-size', 'px', event)"
                         >
                     </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-3">
+                    <label for="colorPicker" class="form-label">Color picker</label>
+                    <input
+                        type="color"
+                        class="form-control form-control-color"
+                        id="colorPicker"
+                        value="#000000"
+                        onchange="onStyleChange('#occupation','color', '', event)"
+                    >
                 </div>
 
                 <div class="dropdown-divider my-3"></div>
@@ -309,18 +385,22 @@
                     </div>
 
                     <div class="col-12 col-md-4 mt-3">
-                        <label for="er" class="form-label">Barcode Length</label>
+                        <label for="er" class="form-label">Barcode Length(%)</label>
                         <div class="input-group">
                             <input type="number"
                                    class="form-control"
                                    id="er"
-                                   value="12"
-                                   placeholder="Barcode Length">
+                                   value="100"
+                                   min="0"
+                                   max="100"
+                                   placeholder="Barcode Length"
+                                   onchange="onStyleChange('#barcode','width', '%', event)"
+                            >
                         </div>
                     </div>
 
                     <div class="col-12 col-md-4 mt-3">
-                        <label for="er" class="form-label">Barcode Height</label>
+                        <label for="er" class="form-label">Barcode Height(px)</label>
                         <div class="input-group">
                             <input type="number"
                                    class="form-control"
@@ -357,6 +437,18 @@
                             >
                         </div>
                     </div>
+
+                    <div class="col-12 col-md-4 mt-3">
+                        <label for="colorPicker" class="form-label">Color picker</label>
+                        <input
+                            type="color"
+                            class="form-control form-control-color"
+                            id="colorPicker"
+                            value="#000000"
+                            onchange="onStyleChange('#barcodeText','color', '', event)"
+                        >
+                    </div>
+
                 </div>
 
                 <div class="dropdown-divider my-3"></div>
@@ -408,13 +500,24 @@
                         <input type="number"
                                class="form-control"
                                id="er2"
-                               min="20"
-                               max="100"
+                               min="10"
+                               max="30"
                                value="20"
                                placeholder="Custom Text Font Size"
                                onchange="onStyleChange('#customTextPrev','font-size', 'px', event)"
                         >
                     </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-3">
+                    <label for="colorPicker" class="form-label">Color picker</label>
+                    <input
+                        type="color"
+                        class="form-control form-control-color"
+                        id="colorPicker"
+                        value="#000000"
+                        onchange="onStyleChange('#customTextPrev','color', '', event)"
+                    >
                 </div>
 
                 <div class="dropdown-divider my-3"></div>
@@ -434,7 +537,7 @@
                     <h1 class="text-center">
                         Preview
                     </h1>
-                    <div class="preview-section position-relative">
+                    <div class="preview-section position-relative" id="previewSection" style="width: 10cm; height: 15cm">
                         <img src="" id="previewImage" class="img-fluid">
                         <span id="firstName"
                               class="position-absolute start-0 end-0 text-center"
@@ -460,7 +563,7 @@
                                   class="position-absolute d-inline-block overflow-hidden"
                                   style="top: 120px; left: 0; height: 70px"
                             >
-                                <img src="{{@asset('images/barcode.png')}}" class="img-fluid" alt="barcode">
+                                <img src="{{@asset('images/barcode.png')}}" alt="barcode">
                             </span>
                             <span id="barcodeText"
                                   class="position-absolute"

@@ -1,7 +1,7 @@
 @extends("layout.layout")
 
 @section("content")
-    <div class="card shadow rounded-3 overflow-hidden">
+    <div class="card shadow rounded-3 overflow-hidden h-100">
         <h5 class="card-header">Users List</h5>
         <div class="card-footer">
             <form class="row">
@@ -50,7 +50,7 @@
                     <th>GROUP</th>
                     <th>ADDED ON</th>
                     <th>ISSUE STATUS</th>
-                    <th></th>
+                    <th>Print Count</th>
                     <th></th>
                 </tr>
                 </thead>
@@ -77,19 +77,8 @@
                             </span>
                         </h5>
                     </td>
+                    <td>5</td>
                     <td>
-                        <a href="#" class="btn btn-sm btn-primary"><span class="fas fa-cloud-download me-1"></span>Get User Card</a>
-
-                        <button
-                            class="btn btn-sm btn-primary show-modal"
-                            type="button"
-                            data-bs-toggle="modal"
-                            data-bs-target="#selectGroupModal"
-                            data-userID="1"
-                        >
-                            Set Group
-                        </button>
-
                         <div class="btn-group">
                             <div class="btn-group dropdown" role="group">
                                 <button type="button" class="btn btn-sm btn-toolbar" data-bs-toggle="dropdown" aria-expanded="false">
@@ -98,6 +87,16 @@
                                 <ul class="dropdown-menu text-center px-2">
                                     <li>
                                         <a class="btn btn-sm btn-primary w-100" href="#">Regenerate</a>
+                                        <button
+                                            class="btn btn-sm btn-primary show-modal"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#selectGroupModal"
+                                            data-userID="1"
+                                        >
+                                            Set Group
+                                        </button>
+                                        <a href="#" class="btn btn-sm btn-primary"><span class="fas fa-cloud-download me-1"></span>Get User Card</a>
                                     </li>
                                 </ul>
                             </div>

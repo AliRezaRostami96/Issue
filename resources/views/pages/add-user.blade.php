@@ -6,21 +6,64 @@
 
 @section("content")
     <div class="card">
-        <h5 class="card-header">Add User</h5>
+        <h5 class="card-header">Add User(Multiple)</h5>
         <div class="card-body">
             <form class="row">
 
                 <div class="col-12 col-md-6 mt-3">
-                    <label for="userName" class="form-label">User Name</label>
+                    <label for="FirstNameMulti" class="form-label">First Name</label>
                     <div class="input-group">
-                        <input type="text" class="form-control shadow-none" id="userName" placeholder="User Name">
+                        <input type="text" class="form-control shadow-none" id="FirstNameMulti" placeholder="First Name">
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 mt-3">
-                    <label for="groupName" class="form-label">Group Name</label>
+                    <label for="lastNameMulti" class="form-label">Last Name</label>
                     <div class="input-group">
-                        <input type="text" class="form-control shadow-none" id="groupName" placeholder="Group Name">
+                        <input type="text" class="form-control shadow-none" id="lastNameMulti" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <label for="groupMulti" class="form-label">Last Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control shadow-none" id="groupMulti" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <label for="excel" class="form-label">Excel file</label>
+                    <div class="input-group">
+                        <input class="form-control shadow-none" type="file" id="excel">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <label for="images" class="form-label">Images file</label>
+                    <div class="input-group">
+                        <input class="form-control shadow-none" type="file" id="images">
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <h5 class="card-header">Add User(Single)</h5>
+        <div class="card-body">
+            <form class="row">
+
+                <div class="col-12 col-md-6 mt-3">
+                    <label for="FirstName" class="form-label">First Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control shadow-none" id="FirstName" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control shadow-none" id="lastName" placeholder="Last Name">
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mt-3">
@@ -37,6 +80,12 @@
                         <button class="btn btn-sm btn-success rounded-circle ms-1" type="button" onclick="cropperModal.show()"><i class="fas fa-pen"></i></button>
                         <button class="btn btn-sm btn-danger rounded-circle ms-1" type="button" onclick="removeImage()"><i class="fas fa-trash-alt"></i></button>
                     </div>
+                </div>
+                <div class="col-12 col-md-6 mt-1 text-start">
+                    <select id="select2" name="state">
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
                 </div>
                 <div class="col-12 mt-2">
                     <button type="submit" class="btn btn-primary">Save</button>
@@ -110,5 +159,17 @@
             $("#previewContainer").removeClass("d-none");
             cropperModal.hide();
         }
+
+
+        $(document).ready(function() {
+            $('#select2').select2({
+                dropdownParent: $('#selectGroupModal'),
+                width: '100%'
+            });
+            $('.select2').select2({
+                width: '100%',
+            });
+        });
+
     </script>
 @endsection
