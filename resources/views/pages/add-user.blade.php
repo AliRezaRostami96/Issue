@@ -5,7 +5,8 @@
 @endsection
 
 @section("content")
-    <div class="card">
+    <div class="overflow-auto">
+        <div class="card">
         <h5 class="card-header">Add User(Multiple)</h5>
         <div class="card-body">
             <form class="row">
@@ -48,7 +49,7 @@
         </div>
     </div>
 
-    <div class="card mt-2">
+        <div class="card mt-2">
         <h5 class="card-header">Add User(Single)</h5>
         <div class="card-body">
             <form class="row">
@@ -92,6 +93,7 @@
                 </div>
             </form>
         </div>
+    </div>
     </div>
 @endsection
 

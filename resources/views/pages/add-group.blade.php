@@ -1,7 +1,7 @@
 @extends("layout.layout")
 
 @section("content")
-    <div class="card">
+    <div class="card flex-fill">
         <h5 class="card-header">Add Group</h5>
         <div class="card-body">
             <form class="row">

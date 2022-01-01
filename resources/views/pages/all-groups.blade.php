@@ -1,7 +1,7 @@
 @extends("layout.layout")
 
 @section("content")
-    <div class="card shadow rounded-3 overflow-hidden">
+    <div class="card shadow rounded-3 overflow-hidden flex-fill">
         <h5 class="card-header">Groups List</h5>
         <div class="card-footer">
             <form class="row">
@@ -30,49 +30,335 @@
 
             </form>
         </div>
-        <div class="card-body">
-            <div class="w-100 overflow-auto">
+        <div class="card-body d-flex flex-column overflow-hidden">
+            <div class="w-100 flex-fill overflow-auto">
                 <table class="table table-hover text-center m-0">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>COLOR</th>
-                    <th>NAME</th>
-                    <th>CARD</th>
-                    <th>USERS COUNT</th>
-                    <th>DEFAULT</th>
-                    <th>VIEW</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <span class="rounded-circle d-inline-block"
-                              style="background: #0c4128; width: 30px; height: 30px"></span>
-                    </td>
-                    <td>ستاد</td>
-                    <td>
-                            <span class="badge bg-success">
-                                STAFF
-                            </span>
-                    </td>
-                    <td>
-                        221 Users
-                    </td>
-                    <td>
-                            <span class="badge bg-success">
-                                -
-                            </span>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-sm btn-primary shadow-none">
-                            View Users
-                        </a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>COLOR</th>
+                            <th>NAME</th>
+                            <th>CARD</th>
+                            <th>USERS COUNT</th>
+                            <th>DEFAULT</th>
+                            <th>VIEW</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="rounded-circle d-inline-block"
+                                      style="background: #0c4128; width: 30px; height: 30px"></span>
+                            </td>
+                            <td>ستاد</td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        STAFF
+                                    </span>
+                            </td>
+                            <td>
+                                221 Users
+                            </td>
+                            <td>
+                                    <span class="badge bg-success">
+                                        -
+                                    </span>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary shadow-none">
+                                    View Users
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="mt-3 d-flex flex-row-reverse">
                 <div style="width: 80px;">

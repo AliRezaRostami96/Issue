@@ -1,7 +1,7 @@
 @extends("layout.layout")
 
 @section("content")
-    <div class="card shadow rounded-3 overflow-hidden">
+    <div class="card shadow rounded-3 flex-fill">
         <h5 class="card-header">Cards List</h5>
         <div class="card-footer">
             <form class="row">
@@ -30,8 +30,8 @@
 
             </form>
         </div>
-        <div class="card-body">
-            <div class="w-100 overflow-auto">
+        <div class="card-body d-flex flex-column overflow-hidden">
+            <div class="w-100 flex-fill overflow-auto">
                 <table class="table table-hover text-center m-0">
                     <thead>
                     <tr>
@@ -45,29 +45,236 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Staff</td>
-                        <td>1 Group</td>
-                        <td>English</td>
-                        <td>ArialBold</td>
-                        <td>
-                            <button
-                                type="button"
-                                class="btn-sm btn-primary shadow-none show-modal"
-                                data-bs-toggle="modal"
-                                data-bs-target="#showCardModal"
-                                data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
-                            >
-                                Show Card
-                            </button>
-                        </td>
-                        <td>
-                <span class="badge bg-success">
-                    yes
-                </span>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -102,7 +309,6 @@
             </div>
         </div>
     </div>
-
 @endsection
 
 @section("modal")
