@@ -21,7 +21,7 @@
 
         @include('layout.menu')
 
-        <div class="main-content min-vh-100">
+        <div class="main-content vh-100 d-flex flex-column">
             <div class="content-header bg-white shadow">
                 <div class="dropdown text-end">
                     <button class="bg-light border border-start border-0 text-dark p-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -33,7 +33,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="py-2 px-4">
+            <div class="py-2 px-4 flex-fill d-flex overflow-hidden">
                 @yield('content')
             </div>
         </div>
