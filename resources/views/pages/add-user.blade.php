@@ -11,37 +11,42 @@
         <div class="card-body">
             <form class="row">
 
-                <div class="col-12 col-md-6 mt-3">
-                    <label for="FirstNameMulti" class="form-label">First Name</label>
+                <div class="col-6 col-md-3 mt-3">
+                    <label for="FirstNameMulti" class="form-label">First Name(column)</label>
                     <div class="input-group">
-                        <input type="text" class="form-control shadow-none" id="FirstNameMulti" placeholder="First Name">
+                        <input type="text" maxlength="1" class="form-control shadow-none" id="FirstNameMulti" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mt-3">
+                    <label for="lastNameMulti" class="form-label">Last Name(column)</label>
+                    <div class="input-group">
+                        <input type="text" maxlength="1" class="form-control shadow-none" id="lastNameMulti" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3 text-start">
+                    <label for="groupMulti" class="mb-2">Group name</label>
+                    <select class="select2" id="groupMulti" name="groupMulti">
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <label for="excel" class="form-label">Excel file</label>
+                    <div class="input-group">
+                        <input class="form-control shadow-none" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" id="excel">
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 mt-3">
-                    <label for="lastNameMulti" class="form-label">Last Name</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control shadow-none" id="lastNameMulti" placeholder="Last Name">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 mt-3">
-                    <label for="groupMulti" class="form-label">Last Name</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control shadow-none" id="groupMulti" placeholder="Last Name">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 mt-3">
-                    <label for="excel" class="form-label">Excel file</label>
-                    <div class="input-group">
-                        <input class="form-control shadow-none" type="file" id="excel">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 mt-3">
                     <label for="images" class="form-label">Images file</label>
                     <div class="input-group">
-                        <input class="form-control shadow-none" type="file" id="images">
+                        <input class="form-control shadow-none" type="file" accept=".zip,.rar" id="images">
                     </div>
                 </div>
+
                 <div class="col-12 mt-2">
                     <button type="submit" class="btn btn-primary">Save</button>
                 </div>
@@ -82,8 +87,9 @@
                         <button class="btn btn-sm btn-danger rounded-circle ms-1" type="button" onclick="removeImage()"><i class="fas fa-trash-alt"></i></button>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mt-1 text-start">
-                    <select id="select2" name="state">
+                <div class="col-12 col-md-6 mt-3 text-start">
+                    <label for="groupSingle" class="mb-2">Group name</label>
+                    <select class="select2" id="groupSingle" name="groupSingle">
                         <option value="AL">Alabama</option>
                         <option value="WY">Wyoming</option>
                     </select>
@@ -139,7 +145,6 @@
         }
 
         function cropperInit() {
-            console.log($("#imageCropper"))
             const image = document.getElementById('imageCropper');
             cropper = new Cropper(image, {
                 aspectRatio: 1 / 1,
@@ -154,24 +159,12 @@
         }
 
         function saveCroppedImage() {
-            console.log(cropper);
             const croppedBase64 = cropper.getCroppedCanvas().toDataURL();
             $("#cropperImage").val(croppedBase64);
             $("#croppedImagePreview").attr("src", croppedBase64);
             $("#previewContainer").removeClass("d-none");
             cropperModal.hide();
         }
-
-
-        $(document).ready(function() {
-            $('#select2').select2({
-                dropdownParent: $('#selectGroupModal'),
-                width: '100%'
-            });
-            $('.select2').select2({
-                width: '100%',
-            });
-        });
 
     </script>
 @endsection
