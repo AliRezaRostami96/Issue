@@ -14,8 +14,8 @@
                 </div>
 
                 <div class="col-12 col-md-3">
-                    <label for="select1">Group</label>
-                    <select class="select2" id="select1" name="group">
+                    <label for="groupSelect">Group</label>
+                    <select class="select2" id="groupSelect" name="group">
                         <option value="ALL">All Group</option>
                         <option value="AL">Alabama</option>
                         <option value="WY">Wyoming</option>
@@ -655,9 +655,6 @@
             $('#select2').select2({
                 dropdownParent: $('#selectGroupModal'),
                 width: '100%'
-            });
-            $('.select2').select2({
-                width: '100%',
             });
         });
         $(".show-modal").on("click", (e) => {

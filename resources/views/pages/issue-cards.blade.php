@@ -7,8 +7,8 @@
             <form class="row">
 
                 <div class="col-12 col-md-3">
-                    <label for="select2">Group</label>
-                    <select id="select2" name="state">
+                    <label for="selectGroup">Group</label>
+                    <select class="select2" id="selectGroup" name="selectGroup">
                         <option value="ALL">All Group</option>
                         <option value="AL">Alabama</option>
                         <option value="WY">Wyoming</option>
@@ -42,14 +42,4 @@
             </form>
         </div>
     </div>
-@endsection
-
-@section("script")
-    <script>
-        $(document).ready(function() {
-            $('#select2').select2({
-                width: '100%'
-            });
-        });
-    </script>
 @endsection

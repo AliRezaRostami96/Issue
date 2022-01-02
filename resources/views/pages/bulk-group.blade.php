@@ -7,8 +7,8 @@
             <form class="row">
 
                 <div class="col-12 col-md-6">
-                    <label for="select1">Group</label>
-                    <select class="select2" id="select1" name="state">
+                    <label for="firstGroup">Group</label>
+                    <select class="select2" id="firstGroup" name="firstGroup">
                         <option value="ALL">All Group</option>
                         <option value="AL">Alabama</option>
                         <option value="WY">Wyoming</option>
@@ -16,8 +16,8 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <label for="select2">Group</label>
-                    <select class="select2" id="select2" name="state">
+                    <label for="secondGroup">Group</label>
+                    <select class="select2" id="secondGroup" name="secondGroup">
                         <option value="ALL">All Group</option>
                         <option value="AL">Alabama</option>
                         <option value="WY">Wyoming</option>
@@ -31,14 +31,4 @@
             </form>
         </div>
     </div>
-@endsection
-
-@section("script")
-    <script>
-        $(document).ready(function() {
-            $('.select2').select2({
-                width: '100%'
-            });
-        });
-    </script>
 @endsection
