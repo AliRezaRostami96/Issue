@@ -36,6 +36,7 @@
                     <thead>
                     <tr>
                         <th>ID</th>
+                        <th>COLOR</th>
                         <th>NAME</th>
                         <th>PRINT TYPE</th>
                         <th>FONT</th>
@@ -47,6 +48,9 @@
                     <tbody>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -70,6 +74,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -93,6 +100,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -116,6 +126,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -139,6 +152,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -162,6 +178,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -185,6 +204,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -208,6 +230,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -231,6 +256,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -254,6 +282,9 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
                             <td>Staff</td>
                             <td>1 Group</td>
                             <td>English</td>
@@ -275,6 +306,85 @@
                                 </span>
                             </td>
                         </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span style="background-color: #0c4128; width: 30px; height: 30px" class="rounded-circle d-inline-block"></span>
+                            </td>
+                            <td>Staff</td>
+                            <td>1 Group</td>
+                            <td>English</td>
+                            <td>ArialBold</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn-sm btn-primary shadow-none show-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#showCardModal"
+                                    data-img="https://issue.fajriff.com/upload/cards/card_base_6078218ef082c.jpg"
+                                >
+                                    Show Card
+                                </button>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">
+                                    yes
+                                </span>
+                            </td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>

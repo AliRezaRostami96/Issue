@@ -1,14 +1,10 @@
 $menuWidth: 230px;
 $smallMenuWidth: 47px;
-$pubTransition: .2s;
-$borderColor: #c1c1c1;
-$darkColor: #1d282e;
 
-$primary: #313a46;
 .main-menu {
   width: $smallMenuWidth;
-  transition: $pubTransition;
-  background-color: $primary;
+  transition: var(--pub-transition);
+  background-color: var(--primary);
   z-index: 10;
   &.menu-is-open {
     width: $menuWidth;
@@ -25,16 +21,16 @@ $primary: #313a46;
     }
   }
   .menu-item {
-    border-bottom: solid 1px $borderColor;
+    border-bottom: solid 1px var(--light);
     .page-name {
-      transition: $pubTransition;
+      transition: var(--pub-transition);
     }
   }
 }
 
 .main-content {
   width: calc(100% - $smallMenuWidth);
-  transition: $pubTransition;
+  transition: var(--pub-transition);
   &.menu-is-open {
     width: calc(100% - $menuWidth);
   }

@@ -1,7 +1,7 @@
 .main-menu {
   width: 47px;
-  transition: 0.2s;
-  background-color: #313a46;
+  transition: var(--pub-transition);
+  background-color: var(--primary);
   z-index: 10;
 }
 .main-menu.menu-is-open {
@@ -14,15 +14,15 @@
   display: none !important;
 }
 .main-menu .menu-item {
-  border-bottom: solid 1px #c1c1c1;
+  border-bottom: solid 1px var(--light);
 }
 .main-menu .menu-item .page-name {
-  transition: 0.2s;
+  transition: var(--pub-transition);
 }
 
 .main-content {
   width: calc(100% - $smallMenuWidth);
-  transition: 0.2s;
+  transition: var(--pub-transition);
 }
 .main-content.menu-is-open {
   width: calc(100% - $menuWidth);

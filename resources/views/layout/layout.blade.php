@@ -17,7 +17,7 @@
         <title>@yield('title')</title>
 
     </head>
-    <body dir="ltr">
+    <body dir="ltr" class="dark-theme">
 
         @include('layout.menu')
 
