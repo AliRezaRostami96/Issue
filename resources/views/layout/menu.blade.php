@@ -3,42 +3,42 @@
       0 => array (
         "PageName" => 'All Card Bases',
         "PageLink" => 'all-cards',
-        "IconClasses" => 'fas fa-address-card',
+        "IconClasses" => 'fal fa-address-card',
       ),
       1 => array (
         "PageName" => 'Add Card Base',
         "PageLink" => 'add-card',
-        "IconClasses" => 'fas fa-credit-card-front',
+        "IconClasses" => 'fal fa-id-card-alt',
       ),
       2 => array (
         "PageName" => 'All Groups',
         "PageLink" => 'all-groups',
-        "IconClasses" => 'fas fa-user-friends',
+        "IconClasses" => 'fad fa-ball-pile',
       ),
       3 => array (
         "PageName" => 'Add Group',
         "PageLink" => 'add-group',
-        "IconClasses" => 'fas fa-users-medical',
+        "IconClasses" => 'fal fa-users-medical',
       ),
       4 => array (
         "PageName" => 'All Users',
         "PageLink" => 'all-users',
-        "IconClasses" => 'fas fa-users',
+        "IconClasses" => 'fal fa-users',
       ),
       5 => array (
         "PageName" => 'Add User',
         "PageLink" => 'add-user',
-        "IconClasses" => 'fas fa-users',
+        "IconClasses" => 'fal fa-user-plus',
       ),
       6 => array (
         "PageName" => 'Issue Cards',
         "PageLink" => 'issue-cards',
-        "IconClasses" => 'fas fa-user-friends',
+        "IconClasses" => 'fal fa-digital-tachograph',
       ),
       7 => array (
         "PageName" => 'Bulk Group',
         "PageLink" => 'bulk-group',
-        "IconClasses" => 'fas fa-users-medical',
+        "IconClasses" => 'fal fa-table',
       ),
     )
 @endphp
@@ -57,7 +57,7 @@
         </div>
         <ul class="list-unstyled">
             @foreach($lists as $item)
-                <li class="mt-3 pb-2 menu-item">
+                <li class="mt-3 menu-item">
                     <a href="/{{$item['PageLink']}}"
                        class="text-decoration-none d-inline-block w-100 h-100 text-nowrap overflow-hidden {{(request()->is($item['PageLink'])) ? 'text-white' : 'text-white-50' }}">
                         <i class="{{$item['IconClasses']}} h4 m-0"></i>
